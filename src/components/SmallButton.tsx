@@ -1,10 +1,10 @@
 interface SmallButtonProps {
-
+    text: String
 }
 
 const SmallButton = (props: SmallButtonProps) => {
     return (
-        <button>small button</button>
+        <button>{props.text}</button>
     )
 }
 

@@ -1,10 +1,10 @@
 interface BigButtonProps {
-
+    text: String
 }
 
 const BigButton = (props: BigButtonProps) => {
     return (
-        <button>big button</button>
+        <button>{props.text}</button>
     )
 }
 

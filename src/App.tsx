@@ -4,13 +4,11 @@ import ButtonsContainer from './components/ButtonsContainer'
 
 function App() {
   return (
-    <div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col bg-desaturatedBlueMain h-screen'>
         <Top />
         <Screen />
         <ButtonsContainer />
       </div>
-    </div>
   );
 }
 

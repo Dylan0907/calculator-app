@@ -4,7 +4,7 @@ interface ScreenProps {
 
 const Screen = (props: ScreenProps) => {
     return (
-        <div className='flex justify-center'>Screen</div>
+        <div className='flex justify-center bg-desaturatedBlueScreen'>Screen</div>
     )
 }
 
