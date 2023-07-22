@@ -1,4 +1,4 @@
-interface CalculatorState {
+export interface CalculatorState {
     result: number;
     account: String | null
 }
