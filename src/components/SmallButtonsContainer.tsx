@@ -10,7 +10,7 @@ const SmallButtoncontainer = (props: SmallButtoncontainerProps) => {
             <SmallButton text={'7'}/>
             <SmallButton text={'8'}/>
             <SmallButton text={'9'}/>
-            <SmallButton text={'DEL'}/>
+            <SmallButton redButton= {true} text={'DEL'}/>
             <SmallButton text={'4'}/>
             <SmallButton text={'5'}/>
             <SmallButton text={'6'}/>

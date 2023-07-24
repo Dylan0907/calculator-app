@@ -20,7 +20,7 @@ module.exports = {
       redKeyShadow: '#93261A',
       lightGrayishOrangeKey: '#EAE3DC',
       lightGrayishOrangeKeyShadow: '#B4A597',
-      textColorBlue:'#444B5A',
+      grayishBlue:'#444B5A',
       white: '#FFFFFF'
     },
   },

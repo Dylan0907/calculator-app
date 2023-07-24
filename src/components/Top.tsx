@@ -4,8 +4,8 @@ interface TopProps {
 
 const Top = (props: TopProps) => {
     return (
-        <div className='flex justify-center'>
-            <div>calc</div>
+        <div className='flex'>
+            <div className="">calc</div>
             <div>theme</div>
         </div>
     )
