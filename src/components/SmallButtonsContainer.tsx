@@ -6,11 +6,11 @@ interface SmallButtoncontainerProps {
 
 const SmallButtoncontainer = (props: SmallButtoncontainerProps) => {
     return (
-        <div className="grid grid-cols-4 bg-red">
+        <div className="grid grid-cols-4">
             <SmallButton text={'7'}/>
             <SmallButton text={'8'}/>
             <SmallButton text={'9'}/>
-            <SmallButton redButton= {true} text={'DEL'}/>
+            <SmallButton delButton= {true} text={'DEL'}/>
             <SmallButton text={'4'}/>
             <SmallButton text={'5'}/>
             <SmallButton text={'6'}/>

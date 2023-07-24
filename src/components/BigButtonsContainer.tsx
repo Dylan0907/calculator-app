@@ -6,9 +6,9 @@ interface BigButtoncontainerProps {
 
 const BigButtoncontainer = (props: BigButtoncontainerProps) => {
     return (
-        <div className='flex justify-center gap-4'>
-            <BigButton text={'RESET'}/>
-            <BigButton text={'='}/>
+        <div className='flex justify-center text-lg'>
+            <BigButton type='reset' text={'RESET'}/>
+            <BigButton type='equal' text={'='}/>
         </div>
     )
 }

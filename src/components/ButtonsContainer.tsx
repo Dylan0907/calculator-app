@@ -7,7 +7,7 @@ interface ButtonsContainerProps {
 
 const ButtonsContainer = (props: ButtonsContainerProps) => {
     return (
-        <div className="bg-desaturatedBlueKeyPad content-center">
+        <div className="bg-desaturatedBlueKeyPad rounded-lg p-4 content-center">
             <SmallButtoncontainer />
             <BigButtoncontainer />
         </div>

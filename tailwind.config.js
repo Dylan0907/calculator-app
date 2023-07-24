@@ -11,7 +11,7 @@ module.exports = {
       }
     },
     colors: {
-      desaturatedBlueMain: '#2B4173',
+      desaturatedBlueMain: '#3A4764',
       desaturatedBlueKeyPad: '#232C43',
       desaturatedBlueScreen: '#182034',
       desaturatedDarkBlueKeys: '#6B789E',
