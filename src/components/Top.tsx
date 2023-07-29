@@ -7,7 +7,7 @@ interface TopProps {
 const Top = (props: TopProps) => {
     return (
         <div className='flex mb-2'>
-            <div className="w-1/2 text-lg">calc</div>
+            <div className="w-1/2 text-lg ml-2">calc</div>
             <Toggle/>
         </div>
     )

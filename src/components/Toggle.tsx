@@ -28,12 +28,12 @@ const Toggle = (props: TopProps) => {
     
 
     return (
-        <div className="flex justify-end w-1/2 text-sm">
-            <div className="flex items-center mr-4">theme</div>
+        <div className="flex justify-end w-1/2 text-xs font-normal">
+            <div className="flex items-end justify-end mr-4 mb-1">THEME</div>
 
             <div className="flex flex-col">
 
-                <div className="flex flex-row">
+                <div className="flex flex-row space-x-3 ml-1 mb-1 text-xs">
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>

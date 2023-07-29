@@ -4,7 +4,7 @@ import ButtonsContainer from './components/ButtonsContainer'
 
 function App() {
   return (
-      <div className='flex fixed inset-0 justify-center items-center bg-desaturatedBlueMain text-white'>
+      <div className='flex h-screen inset-0 justify-center items-center bg-desaturatedBlueMain text-white'>
         <div className='w-auto'>
           <Top />
           <Screen />
