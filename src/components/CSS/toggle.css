@@ -1,0 +1,21 @@
+input {
+    height: 14px;
+    width: 14px;
+    appearance: none;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+
+  .tri-state-toggle {
+    height:20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }

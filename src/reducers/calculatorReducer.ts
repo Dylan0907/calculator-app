@@ -9,7 +9,7 @@ interface Action {
 
 
 const initialState : CalculatorState = {
-    result: 0,
+    result: 2432423,
     account: null
 }
 
