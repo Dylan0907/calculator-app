@@ -1,16 +1,23 @@
-interface BigButtonProps {
-    text: String,
-    type:string
-}
+import { ButtonProps } from "../types/button";
 
-const reset: string = 'bg-desaturatedDarkBlueKeys w-1/2 m-2 p-2 hover:brightness-150 border-desaturatedDarkBlueKeysShadows rounded text-white border-b-4'
+const BigButton = (props: ButtonProps) => {
+    const {text, keyStyle, textStyle} = props
+    const bigButton = document.getElementById(text);
+    const style: string = 'w-1/2 m-2 p-2 hover:brightness-150 rounded  border-b-4'
 
-const equal: string = 'bg-redKey rounded flex-grow w-1/2 m-2 hover:brightness-150  text-white border-b-4 border-redKeyShadow'
+    if(bigButton) {
+        if(text === "RESET") {
+            bigButton.style.backgroundColor = keyStyle.specialKeyBg
+            bigButton.style.borderColor = keyStyle.specialKeyShw
+            bigButton.style.color = textStyle.text2
+        } else {
+            bigButton.style.backgroundColor = keyStyle.toggleEqBtn
+            bigButton.style.borderColor = keyStyle.toggleEqBtnShw
+        }
+    }
 
-const BigButton = (props: BigButtonProps) => {
-    const style = props.type === 'reset' ? reset : equal
     return (
-        <button className={style}>{props.text}</button>
+        <button className={style} id={text}>{text}</button>
     )
 }
 

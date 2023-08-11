@@ -1,28 +1,40 @@
-import { useEffect, useState } from "react";
-import "./CSS/toggle.css"
+import { useEffect } from "react";
+import "./css/toggle.css"
+import { useDispatch, useSelector } from "react-redux";
+import { changeTheme } from "../actions/actions";
+import themes from './css/themes.json'
+import { CalculatorState } from "../reducers/calculatorReducer";
+import { Themes } from "../types/themes";
 
-interface TopProps {
-    
-}
 
-const Toggle = (props: TopProps) => {
-    const [theme, setTheme] = useState('first');
+const Toggle = () => {
+
+    const theme = useSelector<CalculatorState, string>(state  => state.theme);
+    const selectedTheme = themes[theme as keyof Themes]
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        const myElement = document.getElementById(theme);
-        if(myElement) {
-            myElement.style.opacity = '1';
+        const toggle = document.getElementById(theme);
+        const toggleBackground = document.getElementById("toggle-bg");
+
+        if(toggle) {
+            toggle.style.opacity = '1';
+            toggle.style.backgroundColor = selectedTheme.key.toggleEqBtn       }
+
+        if(toggleBackground) {
+            toggleBackground.style.backgroundColor = selectedTheme.background.toggleKeypad
         }
+
       });
 
     const handleClick = (event : React.FormEvent<HTMLInputElement>) => {
         const newTheme = event.currentTarget.id
-        const lastElement = document.getElementById(theme)
-        const myElement = document.getElementById(newTheme);
-        if(myElement && (lastElement !==myElement) && lastElement) {
-            myElement.style.opacity = '1';
-            lastElement.style.opacity = '0';
-            setTheme(newTheme)
+        const lastTheme = document.getElementById(theme)
+        const newElement = document.getElementById(newTheme);
+        dispatch(changeTheme(newTheme))
+        if((lastTheme !== newElement) && lastTheme) {
+            lastTheme.style.opacity = '0';
         }
       };
     
@@ -39,10 +51,10 @@ const Toggle = (props: TopProps) => {
                     <span>3</span>
                 </div>
 
-                <div className="flex flex-row bg-desaturatedBlueKeyPad tri-state-toggle justify-center">
-                    <input id="first" name="toggle"  type="radio" onClick={handleClick}/>
-                    <input id="second" name="toggle" type="radio" onClick={handleClick}/>
-                    <input id="third" name="toggle" type="radio" onClick={handleClick}/>
+                <div className="flex flex-row tri-state-toggle justify-center" id="toggle-bg">
+                    <input id="one" name="toggle"  type="radio" onClick={handleClick}/>
+                    <input id="two" name="toggle" type="radio" onClick={handleClick}/>
+                    <input id="three" name="toggle" type="radio" onClick={handleClick}/>
                 </div>
 
             </div>
