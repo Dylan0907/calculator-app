@@ -1,7 +1,3 @@
-export const addition = () => {
-
-}
-
 export const changeTheme = (newTheme : string) => {
     return {
         type: 'CHANGE_THEME',
@@ -10,5 +6,22 @@ export const changeTheme = (newTheme : string) => {
         }
     }
 }
+
+export const addDigit = (newDigit : string) => {
+    return {
+        type: 'ENTER_DIGIT',
+        payload : {
+            digit : newDigit
+        }
+    }
+}
+
+export const deleteDigit = () => {
+    return {
+        type: 'DELETE_DIGIT',
+    }
+}
+
+
 
 

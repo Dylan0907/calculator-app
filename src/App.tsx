@@ -11,7 +11,7 @@ function App() {
 
   const theme = useSelector<CalculatorState, string>(state  => state.theme);
   const selectedTheme = themes[theme as keyof Themes]
-
+  
   useEffect(() => {
     const myElement = document.getElementById("main-bg");
 

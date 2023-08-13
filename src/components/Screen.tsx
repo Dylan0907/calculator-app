@@ -8,7 +8,7 @@ interface ScreenProps {
 
 const Screen = (props: ScreenProps) => {
 
-    const result = useSelector<CalculatorState, number>(state  => state.result);
+    const result = useSelector<CalculatorState, string>(state  => state.screenNumber);
 
     useEffect(() => {
         const myElement = document.getElementById("screen-bg");

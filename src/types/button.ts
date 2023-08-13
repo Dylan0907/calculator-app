@@ -4,5 +4,6 @@ export interface ButtonProps {
     text: string;
     delButton?: boolean;
     keyStyle: Key;
-    textStyle: Text
+    textStyle: Text;
+    clickEvent?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
