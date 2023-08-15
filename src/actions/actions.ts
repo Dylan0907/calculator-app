@@ -16,9 +16,30 @@ export const addDigit = (newDigit : string) => {
     }
 }
 
+export const addOperator = (newOperator : string) => {
+    return {
+        type: 'ENTER_OPERATOR',
+        payload : {
+            operator : newOperator
+        }
+    }
+}
+
 export const deleteDigit = () => {
     return {
         type: 'DELETE_DIGIT',
+    }
+}
+
+export const resetCalculator = () => {
+    return {
+        type: 'RESET_CALCULATOR',
+    }
+}
+
+export const calculateResult = () => {
+    return {
+        type: 'CALCULATE_RESULT',
     }
 }
 

@@ -1,10 +1,11 @@
+import calculate from "../utills/calculator";
+
 export interface CalculatorState {
     screenNumber: string;
-    operand1: string;
-    operand2: string;
+    firstOperand: string;
     operator: string;
-    total: string | null;
     theme: string;
+    isFloat: boolean
 }
 
 interface Action {
@@ -15,23 +16,52 @@ interface Action {
 interface Payload {
     theme: string
     digit: string
+    operator: string
 }
 
 const initialState : CalculatorState = {
     screenNumber: "0",
-    operand1: "0",
-    operand2:"0",
+    firstOperand: "0",
     operator: "",
-    total: null,
-    theme: "one"
+    theme: "one",
+    isFloat: false
 }
 
 export const calculatorReducer = (state : CalculatorState = initialState, action : Action) : CalculatorState => {
     switch (action.type){
         case 'ENTER_DIGIT':
+            if (state.isFloat || action.payload.digit !== "." ) {
+                return {
+                    ...state,
+                    isFloat: true,
+                    screenNumber: state.screenNumber + action.payload.digit
+                }
+            } 
+            return state
+        case 'ENTER_OPERATOR':
             return {
                 ...state,
-                screenNumber: state.screenNumber + action.payload.digit
+                firstOperand: state.screenNumber,
+                operator: action.payload.operator,
+                screenNumber: "0" ,
+                isFloat: false
+            }
+        case 'RESET_CALCULATOR':
+            return {
+                ...state,
+                firstOperand: "0",
+                operator: "0",
+                screenNumber: "0" ,
+                isFloat: false 
+            }
+        case 'CALCULATE_RESULT':
+            const result = calculate (state.firstOperand, state.screenNumber, state.operator) + ""
+            return {
+                ...state,
+                firstOperand: result,
+                operator: "0",
+                screenNumber: result,
+                isFloat: false
             }
         case 'CHANGE_THEME':
             return {
