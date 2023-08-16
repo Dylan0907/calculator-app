@@ -28,7 +28,7 @@ function calculate (a : string, b: string, operator: string) : string {
         case "/":
           return divide(a, b);
         default:
-          return "0";
+          return b;
       }
 }
 

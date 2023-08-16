@@ -24,7 +24,7 @@ function App() {
 
   return (
       <div className='flex h-screen justify-center items-center text-white' id="main-bg">
-        <div className='w-auto'>
+        <div className='w-11/12 md:w-7/12 lg:w-4/12'>
           <Top/>
           <Screen screenColor = {selectedTheme.background.screen}/>
           <ButtonsContainer keypadColor={selectedTheme.background.toggleKeypad}/>
