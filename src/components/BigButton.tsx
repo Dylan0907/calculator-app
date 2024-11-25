@@ -13,10 +13,10 @@ const BigButton = (props: ButtonProps) => {
             if(text === "RESET") {
                 bigButton.style.backgroundColor = keyStyle.specialKeyBg
                 bigButton.style.borderColor = keyStyle.specialKeyShw
-                bigButton.style.color = textStyle.text2
             } else {
                 bigButton.style.backgroundColor = keyStyle.toggleEqBtn
                 bigButton.style.borderColor = keyStyle.toggleEqBtnShw
+                bigButton.style.color = textStyle.text3
             }
         }
     });

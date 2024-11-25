@@ -29,5 +29,5 @@ export interface Key {
 export interface Text {
     text1: string;
     text2: string;
-    text3?: string
+    text3: string
 }

@@ -1,0 +1,1 @@
+{ "name": "Calculator App", "short_name": "CalcApp", "start_url": "/index.html", "display": "standalone", "background_color": "#ffffff", "description": "A simple calculator app" }
