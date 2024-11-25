@@ -10,6 +10,7 @@ const BigButton = (props: ButtonProps) => {
         const bigButton = document.getElementById(text);
 
         if(bigButton) {
+            bigButton.style.color = textStyle.text2
             if(text === "RESET") {
                 bigButton.style.backgroundColor = keyStyle.specialKeyBg
                 bigButton.style.borderColor = keyStyle.specialKeyShw
