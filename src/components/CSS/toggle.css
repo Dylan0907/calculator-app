@@ -1,21 +1,21 @@
 input {
-    height: 14px;
-    width: 14px;
-    appearance: none;
-    border-radius: 50%;
-    opacity: 0;
-  }
+  height: 14px;
+  width: 14px;
+  appearance: none;
+  border-radius: 50%;
+  opacity: 0;
+}
 
-  input:hover {
-    cursor: pointer;
-    filter: brightness(125%);
-  }
+input:hover {
+  cursor: pointer;
+  filter: brightness(125%);
+}
 
-  .tri-state-toggle {
-    height:20px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-  }
+.tri-state-toggle {
+  height: 20px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}

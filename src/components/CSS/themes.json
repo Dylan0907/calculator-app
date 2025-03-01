@@ -1,63 +1,62 @@
 {
-        "one":{
-            "background" : {
-                "main": "hsl(222, 26%, 31%)",
-                "toggleKeypad":"hsl(223, 31%, 20%)",
-                "screen":"hsl(224, 36%, 15%)"
-            },
-            "key": {
-                "specialKeyBg": "hsl(225, 21%, 49%)",
-                "specialKeyShw": "hsl(224, 28%, 35%)",
-                "toggleEqBtn": "hsl(6, 63%, 50%)",
-                "toggleEqBtnShw": "hsl(6, 70%, 34%)",
-                "numberKeyBg": "hsl(30, 25%, 89%)",
-                "numberKeyShw": "hsl(28, 16%, 65%)"
-            },
-            "text": {
-                "text1": "hsl(221, 14%, 31%)",
-                "text2": "hsl(0, 0%, 100%)",
-                "text3": "hsl(0, 0%, 100%)"
-            }
-        },
-        "two":{
-            "background" : {
-                "main":"hsl(0, 0%, 90%)",
-                "toggleKeypad":"hsl(0, 5%, 81%)",
-                "screen":"hsl(0, 0%, 93%)"
-            },
-            "key": {
-                "specialKeyBg": "hsl(185, 42%, 37%)",
-                "specialKeyShw": "hsl(185, 58%, 25%)",
-                "toggleEqBtn": "hsl(25, 98%, 40%)",
-                "toggleEqBtnShw": "hsl(25, 99%, 27%)",
-                "numberKeyBg": "hsl(45, 7%, 89%)",
-                "numberKeyShw": "hsl(35, 11%, 61%)"
-            },
-            "text": {
-                "text1": "hsl(60, 10%, 19%)",
-                "text2": "hsl(0, 0%, 100%)",
-                "text3": "hsl(0, 0%, 100%)"
-            }
-        },
-        "three":{
-            "background" : {
-                "main":"hsl(268, 75%, 9%)",
-                "toggleKeypad":"hsl(268, 71%, 12%)",
-                "screen":"hsl(268, 71%, 12%)"
-            },
-            "key": {
-                "specialKeyBg": "hsl(281, 89%, 26%)",
-                "specialKeyShw": "hsl(285, 91%, 52%)",
-                "toggleEqBtn": "hsl(176, 100%, 44%)",
-                "toggleEqBtnShw": "hsl(177, 92%, 70%)",
-                "numberKeyBg": "hsl(268, 47%, 21%)",
-                "numberKeyShw": "hsl(290, 70%, 36%)"
-            },
-            "text": {
-                "text1": "hsl(52, 100%, 62%)",
-                "text2": "hsl(0, 0%, 100%)",
-                "text3": "hsl(198, 20%, 13%)"
-            }
-        }
-
+  "one": {
+    "background": {
+      "main": "hsl(222, 26%, 31%)",
+      "toggleKeypad": "hsl(223, 31%, 20%)",
+      "screen": "hsl(224, 36%, 15%)"
+    },
+    "key": {
+      "specialKeyBg": "hsl(225, 21%, 49%)",
+      "specialKeyShw": "hsl(224, 28%, 35%)",
+      "toggleEqBtn": "hsl(6, 63%, 50%)",
+      "toggleEqBtnShw": "hsl(6, 70%, 34%)",
+      "numberKeyBg": "hsl(30, 25%, 89%)",
+      "numberKeyShw": "hsl(28, 16%, 65%)"
+    },
+    "text": {
+      "text1": "hsl(221, 14%, 31%)",
+      "text2": "hsl(0, 0%, 100%)",
+      "text3": "hsl(0, 0%, 100%)"
+    }
+  },
+  "two": {
+    "background": {
+      "main": "hsl(0, 0%, 90%)",
+      "toggleKeypad": "hsl(0, 5%, 81%)",
+      "screen": "hsl(0, 0%, 93%)"
+    },
+    "key": {
+      "specialKeyBg": "hsl(185, 42%, 37%)",
+      "specialKeyShw": "hsl(185, 58%, 25%)",
+      "toggleEqBtn": "hsl(25, 98%, 40%)",
+      "toggleEqBtnShw": "hsl(25, 99%, 27%)",
+      "numberKeyBg": "hsl(45, 7%, 89%)",
+      "numberKeyShw": "hsl(35, 11%, 61%)"
+    },
+    "text": {
+      "text1": "hsl(60, 10%, 19%)",
+      "text2": "hsl(0, 0%, 100%)",
+      "text3": "hsl(0, 0%, 100%)"
+    }
+  },
+  "three": {
+    "background": {
+      "main": "hsl(268, 75%, 9%)",
+      "toggleKeypad": "hsl(268, 71%, 12%)",
+      "screen": "hsl(268, 71%, 12%)"
+    },
+    "key": {
+      "specialKeyBg": "hsl(281, 89%, 26%)",
+      "specialKeyShw": "hsl(285, 91%, 52%)",
+      "toggleEqBtn": "hsl(176, 100%, 44%)",
+      "toggleEqBtnShw": "hsl(177, 92%, 70%)",
+      "numberKeyBg": "hsl(268, 47%, 21%)",
+      "numberKeyShw": "hsl(290, 70%, 36%)"
+    },
+    "text": {
+      "text1": "hsl(52, 100%, 62%)",
+      "text2": "hsl(0, 0%, 100%)",
+      "text3": "hsl(198, 20%, 13%)"
+    }
+  }
 }
